@@ -1,5 +1,13 @@
 //INTERFACES
 //It creates new type, describing the property names and values types of an object.
+interface Reportable{
+    // name: string,
+    // year: number,
+    // isBroken: boolean,
+    summary(): string
+};
+
+
 const oldCivic = {
     name: 'civic',
     year: 2000,
@@ -9,14 +17,17 @@ const oldCivic = {
     }
 };
 
-interface Reportable{
-    // name: string,
-    // year: number,
-    // isBroken: boolean,
-    summary(): string
+const drink = {
+    name: 'Pepsi',
+    carbonated: true,
+    sugar: 40,
+    summary(): string {
+        return `My drink has ${this.sugar} grams of sugar`;
+    }
 };
 
 const printVehicle = (vehicle: Reportable): void => {
     console.log(vehicle.summary())
 };
 printVehicle(oldCivic);
+printVehicle(drink)
