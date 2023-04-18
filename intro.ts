@@ -3,6 +3,7 @@
 // let isMarried: boolean = true;
 // let hobbies: string[] = ["reading", "traveling", "swimming"];
 
+
 // function sayHello(name: string): void {
 //   console.log(`Hello, ${name}!`);
 // }
