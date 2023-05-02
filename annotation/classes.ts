@@ -14,14 +14,14 @@ class Vehicle {
 //the keyword "extends" automatically passes the property/methods
 //of the "Vehicle" class to the "Car" class.
 class Car extends Vehicle{
-    drive(): void{
-        console.log("Vroom Vroom");
-    }
+    // drive(): void{
+    //     console.log("Vroom Vroom");
+    // }
 };
 
 const vehicle = new Vehicle();
-vehicle.drive();
-vehicle.honk();
+// vehicle.drive();
+// vehicle.honk();
 
 const car = new Car();
 car.drive();
